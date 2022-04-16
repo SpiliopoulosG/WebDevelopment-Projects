@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CEAB93;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Sacramento', cursive;
+  margin: 50px auto 0 auto;
+  line-height: 2;
+  color: #EEEEEE;
+}
+
+h2 {
+  margin: 10px;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #EEEEEE;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+    font-family: 'Sacramento', cursive;
+    margin: 50px auto 0 auto;
+    line-height: 2;
+    color: #EEEEEE;
+  }
+
+  h2 {
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #EEEEEE;
+    padding-bottom: 10px;
+  }
+
+  #myimage{
+    width: 300px;
+  }
+}
+
+/* Grid */
+.leftS {
+  width: 50%;
+  float: left;
+  padding: 10px 100px 10px 20px;
+}
+
+.rightS {
+  width: 50%;
+  float: right;
+  padding: 10px 100px 10px 20px;
+}
+
+@media (max-width: 1000px) {
+  .leftS {
+    width: 100%;
+    padding: 10px 10px 0px 0px;
+  }
+
+  .rightS {
+    width: 100%;
+    padding: 10px 10px 0px 0px;
+  }
+}
+
+.leftC {
+  width: 50%;
+  float: left;
+  padding: 50px 30px 50px 30px;
+}
+
+.rightC {
+  width: 50%;
+  float: right;
+  padding: 50px 30px 50px 30px;
+}
+
+@media (max-width: 1370px) {
+  .leftC {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightC {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Header */
+.hero {
+  display: block;
+  box-sizing: border-box;
+  height: 450px;
+  background-color: #FF9900;
+  clip-path: ellipse(60% 100% at 50% 0%);
+}
+
+.heading {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.head {
+  margin-top: 0px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.profile {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #fff;
+  margin: 10px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+/* Skills */
+#skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.containera {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containera .box {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.025);
+}
+
+@media (max-width: 550px) {
+  .containera .box {
+    width: 250px;
+  }
+}
+
+.containera .box:nth-child(1):hover {
+  transform: translateX(+10%);
+}
+
+.containera .box:nth-child(2):hover {
+  transform: translateX(+10%);
+}
+
+.containera .box:nth-child(3):hover {
+  transform: translateX(10%);
+}
+
+.containera .box::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.containera .box:hover::before {
+  width: 100%;
+}
+
+.containera .box .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.containera .box .content .icon {
+  position: relative;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containera .box .content .icon i {
+  font-size: 2.5rem;
+  color: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.containera .box:hover .content .icon i {
+  color: #fff;
+}
+
+.containera .box .content .text h3 {
+  font-weight: 500;
+  color: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.containera .box .content .text p {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.containera .box:hover .content .text p,
+.containera .box:hover .content .text h3 {
+  color: #fff;
+}
+
+/* Card Start*/
+
+.card
+{
+  position: relative;
+  width: 550px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(135deg,#FF9900,#F90716);
+}
+
+.card#blue
+{
+  background: linear-gradient(135deg,#d41e31,#491f8f);
+}
+
+.card img
+{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  height: 300px;
+}
+
+.card:hover img
+{
+  left: 80%;
+  height: 400px;
+}
+
+.card .content
+{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .content
+{
+  opacity: 1;
+  left: 0%;
+  visibility: visible;
+}
+
+.card .content h2
+{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 1em;
+}
+
+.card .content p
+{
+  color: #fff;
+}
+
+.card .content a
+{
+  position: relative;
+  display: inline-block;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px)
+{
+  .card
+  {
+    position: relative;
+    width: auto;
+    max-width: 600px;
+    transition: 0.5s;
+    align-items: flex-start;
+  }
+  .card:hover
+  {
+    height: 550px;
+  }
+  .card:hover img
+  {
+    left: 50%;
+    height: 350px;
+  }
+  .card .content
+  {
+    position: relative;
+    width: 100%;
+    left: 0%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 550px)
+{
+  .card:hover img
+  {
+    height: 250px;
+  }
+  .card .content
+  {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 360px)
+{
+  .card:hover img
+  {
+    height: 150px;
+  }
+  .card .content
+  {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1370px)
+{
+  .card
+  {
+    position: relative;
+    width: auto;
+    max-width: 1300px;
+    transition: 0.5s;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px)
+{
+  .card
+  {
+    position: relative;
+    width: auto;
+    max-width: 800px;
+    transition: 0.5s;
+    align-items: flex-start;
+  }
+}
+/* Card End */
+
+/* My Stack Image Stact*/
+#mystack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .awsimage {
+    width: 75%;
+  }
+}
+
+/* My Stack Image End*/
+/* Footer Start*/
+#foot {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.fail {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 70vh;
+  background: #CEAB93;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #FF9900;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(Images/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Footer End */

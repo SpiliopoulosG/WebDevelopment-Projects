@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ff-u {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-blue {
+    color: #61A4BC;
+}
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.mar-1 {
+    margin: 1rem 0;
+}
+
+.searchcontent {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 200px;
+    margin-top: 80px;
+    z-index: 1001;
+    font-size: 32px;
+    letter-spacing: 0.2em;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.searchForm {
+    flex-direction: row;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 1px solid #F55353;
+    padding: 20px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #F55353;
+}
+
+.searchTerm:focus {
+    color: #F55353;
+}
+
+.searchButton {
+    width: 50px;
+    height: 42px;
+    border: 1px solid #F55353;
+    background: #F55353;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* ------BackGround------ */
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    position: relative;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.introduction-canvas--overflow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: linear-gradient(to right bottom, rgba(41, 8, 48, 0.95) 0, rgba(82, 65, 143, 0.95) 50%, rgba(114, 183, 227, 0.95) 100%);
+}
+
+#word{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin-top: 150px;
+    width: 100%;
+    line-height: 25px;
+    z-index: 1001;
+    font-size: 1.5rem;
+}
+
+.searchword{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    line-height: 40px;
+    z-index: 1001;
+    font-size: 2rem;
+    letter-spacing: 0;
+}

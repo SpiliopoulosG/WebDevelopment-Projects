@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>WeGame-NewsLetter</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.png">
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/newsletterForm.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/069349f420.js" crossorigin="anonymous"></script>
+  
+  
+  </head>
+  
+
+<body>
+
+  <div id="progressBar"></div>
+  <div id="scrollPath"></div>
+
+  <div class="heading">
+    <a href="../../index.html"><img src="../images/wegame.png" alt="wegame-logo"></a>
+    <header>
+      <div class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+  </div>
+
+  <!-- Full Menu -->
+  <div class="full-menu">
+    <div class="fullmenu-content">
+      <ul class="page-menu">
+        <li><a class="HTMLS active" href="../../index.html">Home</a></li>
+        <li><a class="HTMLS" href="about.html">About</a></li>
+        <li><a class="HTMLS" href="newletterForm.html">News</a></li>
+        <li><a class="HTMLS" href="contactForm.html">Contact</a></li>
+        <li><a class="HTMLS" href="gameStore.html">Game Shop</a></li>
+        <li><a class="HTMLS" href="esportEvents.html">Esport Events</a></li>
+        <li><a class="HTMLS" href="peripheralStore.html">Peripheral Shop</a></li>
+        <li class="social">
+          <a href="https://github.com/SpiliopoulosG"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gspiliopoulos"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/george_sphl/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.spiliopoulosg.com"><i class="fab fa-chrome"></i></a>
+        </li>
+      </ul>
+    </div>
+    <a href="#0" class="modal-close"></a>
+  </div>
+  <div class="cd-transition-layer visible opening">
+    <div class="bg-layer"></div>
+  </div>
+
+\
+  <div class="form-box">
+    <div class="form">
+      <i class="fas fa-envelope-open-text"></i>
+      <h2>Join our NewsLetter!</h2>
+      <div class="input">
+        <form id ='form' action="index.html" method="post">
+        <div class="inputBox">
+          <label>Name</label>
+          <input type="text" name="" placeholder="John Doe">
+        </div>
+        <div class="inputBox">
+          <label>Email</label>
+          <input type="text" id="email" name="" placeholder="Enter Email Address" onkeyup="validate();">
+          <span class="indicator"></span>
+        </div>
+        </form>
+        <div class="inputBox">
+          <input type="submit" name="" value="Subscribe!">
+        </div>
+      </div>
+      <p class="reminder">Personalized emails every month about Gaming!</p>
+    </div>
+  </div>
+
+  <script src="../JS-Folder/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="../JS-Folder/newsLetterForm.js"></script>
+
+</body>
+
+</html>
