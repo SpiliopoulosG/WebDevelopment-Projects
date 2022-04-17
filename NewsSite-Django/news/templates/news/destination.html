@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/destination.css' %}">
+
+
+<div class="title">
+    
+    <h1 class="uppercase text-white subheading-medium ff-bl"><span class="text-grey">01</span>Pick your Destination</h1>
+
+</div>
+
+<div class="content">    
+
+    <div class="container-left">
+        <img src="{% static 'images/image-moon.png' %}" alt="">
+    </div>
+
+    <div class="container-right">
+
+    <!-- Moon Mars Europa Titan    -->
+    <h1 class="text-white m-1 ff-bf uppercase large-header">Moon</h1>
+
+    <p class="text-grey m-1 text">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+    </p>
+        
+    
+    <hr size="1" class="text-grey m-1">
+
+        <div class="information">
+            <div class="information-column m-1">
+                <h6 class="text-grey uppercase subheading-small">Avg. distance</h6>
+                <p class="text-white subheading-medium uppercase ff-bf">384,400 km</p>
+            </div>  
+
+            <div class="information-column m-1">
+                <h6 class="text-grey uppercase subheading-small">Est. travel time</h6>
+                <p class="text-white subheading-medium uppercase ff-bf">3 days</p>
+            </div>
+        </div>
+
+    </div>
+
+    Commander
+
+  
+
+</div>
+
+
+
+{% endblock content %}

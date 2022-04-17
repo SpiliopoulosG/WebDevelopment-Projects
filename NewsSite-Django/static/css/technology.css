@@ -1,0 +1,121 @@
+body {
+    background: url('../images/background-technology-desktop.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.title {
+    margin: 1.5% 5%;
+    display: flex;
+}
+
+.title h1 {
+    width: 100%;
+}
+
+.title span {
+    margin: 0px 35px 0px 35px;
+}
+
+.context {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vh;
+    margin-top: 5vh;
+}
+
+.container-right {
+    display: flex;
+    height: 655px;
+    width: 578px;
+}
+
+.container-left * {
+    width: 550px;
+}
+
+.container-left .information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-left .information-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container-left .information-column p {
+    margin: 0.6rem 0;
+}
+/* Radios */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0% 3%;
+}
+
+.mySlides {
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    margin: 30px 3%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    color: white;
+    border: 1px solid #ffffff;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.checked {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.dot-container {
+    position: absolute;
+    top: 5vh;
+    margin: 0% 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

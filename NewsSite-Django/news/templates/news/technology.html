@@ -1,0 +1,78 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/technology.css' %}">
+
+<div class="title">
+    <h1 class="uppercase text-white subheading-medium ff-bl"><span class="text-grey">03</span>Space Launch 101</h1>
+</div>
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <div class="context">
+            <div class="container-left">
+                <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
+                <h1 class="text-white m-1 ff-bf uppercase medium-header">Launch vehicle</h1>
+                <p class="text-grey m-1 subheading-medium">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                    payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                    it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+            <div class="container-right">
+                <img src="{% static 'images/image-launch-vehicle-portrait.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="context">
+            <div class="container-left">
+                <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
+                <h1 class="text-white m-1 ff-bf uppercase medium-header">Spaceport</h1>
+                <p class="text-grey m-1 subheading-medium">
+                    A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                    by analogy to the seaport for ships or airport for aircraft. Based in the 
+                    famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                    of the Earth’s rotation for launch.
+                </p>
+            </div>
+            <div class="container-right">
+                <img src="{% static 'images/image-spaceport-portrait.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="context">
+            <div class="container-left">
+                <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
+                <h1 class="text-white m-1 ff-bf uppercase medium-header">Space capsule</h1>
+                <p class="text-grey m-1 subheading-medium">
+                    A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+                    capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+                    you'll spend your time during the flight. It includes a space gym, cinema,
+                    and plenty of other activities to keep you entertained.
+                </p>
+            </div>
+            <div class="container-right">
+                <img src="{% static 'images/image-space-capsule-portrait.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+
+        <!-- The dots/circles -->
+    <div class="dot-container m-1">
+        <span class="dot" onclick="currentSlide(0)">1</span>
+        <span class="dot" onclick="currentSlide(1)">2</span>
+        <span class="dot" onclick="currentSlide(2)">3</span>
+    </div>
+
+
+
+    {% endblock content %}

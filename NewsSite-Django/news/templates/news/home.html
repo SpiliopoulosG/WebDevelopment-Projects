@@ -1,7 +1,39 @@
 {% extends 'main.html' %}
+{% load static %}
 
 {% block content %}
 
-<h1>I am awesome</h1>
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<div class="content">
+    <div class="container">
+        <h1 class="text-grey extra-small-header ff-bl uppercase m-1">So, you want to travel to</h1>
+        <span class="extra-large-header text-white ff-bf uppercase m-1">Space</span>
+
+        <p class="text-grey text m-1">
+            Let’s face it; if you want to go to space, you might as well genuinely go to
+            outer space and not hover kind of on the edge of it. Well sit back, and relax
+            because we’ll give you a truly out of this world experience!
+        </p>
+    </div>
+
+    <!-- <div class="container m-1">
+        <div class="circle">
+            <span class="text-white explore ff-bf medium-header uppercase">
+                Explore 
+            </span>
+        </div>
+    </div> -->
+
+    <div class="container m-1">
+        <div class="outer circle">
+            <button class="text-white explore ff-bf uppercase">Explore </button>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</div>
+
 
 {% endblock content %}
