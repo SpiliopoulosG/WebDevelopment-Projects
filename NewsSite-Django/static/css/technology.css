@@ -1,5 +1,8 @@
 body {
     background: url('../images/background-technology-desktop.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -24,7 +27,7 @@ body {
     justify-content: flex-start;
 }
 
-.container-left {
+.container {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -32,37 +35,58 @@ body {
     margin-top: 5vh;
 }
 
-.container-right {
+.vehicle-img {
+    background-image: url(../images/image-launch-vehicle-portrait.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     height: 655px;
     width: 578px;
 }
 
-.container-left * {
+.spaceport-img {
+    background-image: url(../images/image-spaceport-portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 655px;
+    width: 578px;
+}
+
+.spacecapsule-img {
+    background-image: url(../images/image-space-capsule-portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 655px;
+    width: 578px;
+}
+
+.container * {
     width: 550px;
 }
 
-.container-left .information {
+.container .information {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.container-left .information-column {
+.container .information-column {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.container-left .information-column p {
+.container .information-column p {
     margin: 0.6rem 0;
 }
+
 /* Radios */
 
 .slideshow-container {
     width: 100%;
     position: relative;
-    margin: 0% 3%;
 }
 
 .mySlides {
@@ -98,10 +122,11 @@ body {
 
 .dot-container {
     position: absolute;
-    top: 5vh;
+    top: 30vh;
     margin: 0% 4%;
     display: flex;
     flex-direction: column;
+    z-index: 4;
 }
 
 /* Fading animation */
@@ -117,5 +142,433 @@ body {
 
     to {
         opacity: 1
+    }
+}
+
+/* Tablet Responseveness */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background: url('../images/background-technology-tablet.jpg') ;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .context {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .subheading-medium {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+        line-height: 1.5rem;
+    }
+
+    .medium-header{
+        font-size: 32px;
+    }
+
+    .content .text {
+        line-height: 1.5rem;
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .slideshow-container{
+        margin: 0;
+        margin-top: 15vh;
+    }
+
+    .circle {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .circle button {
+        height: 270px;
+        width: 270px;
+        border-radius: 50%;
+    }
+
+    .outer button {
+        font-size: 38px;
+    }
+
+    .vehicle-img {
+        background-image: url(../images/image-launch-vehicle-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spaceport-img {
+        background-image: url(../images/image-spaceport-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spacecapsule-img {
+        background-image: url(../images/image-space-capsule-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .dot-container{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        top: 20vh;
+    }
+
+    .dot {
+        height: 60px;
+        width: 60px;
+        margin: 0px 30px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background: url('../images/background-technology-tablet.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .context {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .slideshow-container{
+        margin: 0;
+        margin-top: 15vh;
+    }
+
+    .subheading-medium {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+        line-height: 1.5rem;
+    }
+
+    .medium-header{
+        font-size: 32px;
+    }
+
+    .content .text {
+        line-height: 1.5rem;
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .container * {
+        width: 400px;
+    }
+
+    .circle {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+    .circle button {
+        height: 270px;
+        width: 270px;
+        border-radius: 50%;
+    }
+
+    .outer button {
+        font-size: 38px;
+    }
+    .vehicle-img {
+        background-image: url(../images/image-launch-vehicle-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spaceport-img {
+        background-image: url(../images/image-spaceport-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spacecapsule-img {
+        background-image: url(../images/image-space-capsule-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .dot-container{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        top: 20vh;
+    }
+
+    .dot {
+        height: 60px;
+        width: 60px;
+        margin: 0px 30px;
+    }
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 480px) {
+    body {
+        background: url('../images/background-technology-mobile.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .context {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .content .text {
+        line-height: 1.5rem;
+        width: 300px;
+        flex-wrap: wrap;
+    }
+
+    .slideshow-container{
+        margin: 0;
+        margin-top: 15vh;
+    }
+
+    .subheading-medium {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+        line-height: 1.5rem;
+    }
+
+    .medium-header{
+        font-size: 32px;
+    }
+
+    .container * {
+        width: 350px;
+    }
+
+    .circle {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .circle button {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .outer button {
+        font-size: 18px;
+    }
+
+    .vehicle-img {
+        background-image: url(../images/image-launch-vehicle-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spaceport-img {
+        background-image: url(../images/image-spaceport-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spacecapsule-img {
+        background-image: url(../images/image-space-capsule-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .dot-container{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        top: 20vh;
+        width: 100%;
+    }
+
+    .dot {
+        height: 60px;
+        width: 60px;
+        margin: 0px 30px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    body {
+        background: url('../images/background-technology-mobile.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .context {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .slideshow-container{
+        margin: 0;
+        margin-top: 15vh;
+    }
+
+    .content .text {
+        line-height: 1.5rem;
+        width: 200px;
+        flex-wrap: wrap;
+    }
+
+    .subheading-medium {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+        line-height: 1.5rem;
+    }
+
+    .medium-header{
+        font-size: 32px;
+    }
+
+    .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .circle button {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    .outer button {
+        font-size: 18px;
+    }
+
+    .vehicle-img {
+        background-image: url(../images/image-launch-vehicle-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spaceport-img {
+        background-image: url(../images/image-spaceport-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .spacecapsule-img {
+        background-image: url(../images/image-space-capsule-landscape.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        height: 350px;
+        width: 100vh;
+    }
+
+    .dot-container{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        top: 20vh;
+    }
+
+    .dot {
+        height: 60px;
+        width: 60px;
+        margin: 0px 30px;
     }
 }

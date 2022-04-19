@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunnySide</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <link rel="icon" href="{% static '/images/favicon-32x32.png' %}">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/113b84d72a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="blue-container">
+        <div class="navbar">
+
+        </div>
+
+        <div class="title">
+            <h1 class="text-white uppercase ff-bl">We are creatives</h1>
+            <img src="{% static 'images/icon-arrow-down.svg' %}" alt="">
+        </div>
+    </div>
+
+    <div class="container-pictures">
+
+        <div class="white-text">
+            <h1 class="ff-fn m-1" >Transform your brand</h1>
+            <p class="text-grey-blue ff-bl m-1">We are a full-service creative agency
+                specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the
+                marketing for you.
+            </p>
+            <a href="#" class="orange-a text-black ff-fn m-1 uppercase">Learn more</a>
+        </div>
+
+        <div class="orange-image">
+        </div>
+
+        <div class="red-image">
+        </div>
+
+        <div class="white-text">
+            <h1 class="ff-fn m-1" >Stand out to the right audience</h1>
+            <p class="text-grey-blue ff-bl m-1">Using a collaborative formula of designers,
+                researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+            </p>
+            <a href="#" class="red-a text-black ff-fn m-1 uppercase">Learn more</a>
+        </div>
+
+        <div class="green-image">
+            <h1 class="text-dark-cyan ff-fn m-1">Graphic design</h1>
+            <p class="text-dark-cyan ff-bl m-1">Great design makes you memorable. We deliver artwork that underscores your brand message
+                and captures potential clients’ attention.</p>
+        </div>
+
+        <div class="blue-image">
+            <h1 class="text-dark-cyan ff-fn m-1">Photography</h1>
+            <p class="text-dark-cyan ff-bl m-1">Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.</p>
+        </div>
+
+    </div>
+
+    <div class="testimonial-part">
+
+        <h1 class="text-grey-blue ff-fn uppercase">Client Testimonials</h1>
+
+        <div class="testimonials">
+            <div class="testimonial-column">
+                <img src="{% static 'images/image-emily.jpg '%}" alt="">
+                <p class="text-dark-grey-blue ff-bl m-1">We put our trust in Sunnyside and they
+                    delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+
+                <h3 class="ff-fn m-top-3">Emily R.</h3>
+                <p class="text-dark-grey-blue ff-bl">Marketing Director</p>
+            </div>
+
+            <div class="testimonial-column">
+                <img src="{% static 'images/image-thomas.jpg '%}" alt="">
+                <p class="text-dark-grey-blue ff-bl m-1">Sunnyside’s
+                    enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                </p>
+
+                <h3 class="ff-fn m-top-3">Thomas S.</h3>
+                <p class="text-dark-grey-blue ff-bl">Chief Operating Officer</p>
+            </div>
+
+            <div class="testimonial-column">
+                <img src="{% static 'images/image-jennie.jpg '%}" alt="">
+                <p class="text-dark-grey-blue ff-bl m-1">Incredible end result! Our sales increased over 400% when we worked with
+                    Sunnyside. Highly recommended! 
+                </p>
+
+                <h3 class="ff-fn m-top-3">Jennie F.</h3>
+                <p class="text-dark-grey-blue ff-bl">F. Business Owner </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product-pictures">
+
+        <div class="milkbottles"></div>
+
+        <div class="cone"></div>
+
+        <div class="orange-box"></div>
+        
+        <div class="sugarcubes"></div>
+
+    </div>
+
+    <div class="green-container">
+        <h1 class="text-dark-cyan ff-bl">sunnyside</h1>
+
+        <div class="services">
+            <p class="text-dark-cyan ff-bl"><a href="">About</a></p> 
+            <p class="text-dark-cyan ff-bl"><a href="">Services</a></p> 
+            <p class="text-dark-cyan ff-bl"><a href="">Projects</a></p> 
+        </div>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/gspiliopoulos"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SpiliopoulosG"><i class="fab fa-github"></i></a>
+        </div>
+
+    </div>
+
+    <!-- <div>
+    About Services Projects Contact 
+    We are creatives Stand out to the right audience Using a collaborative formula of designers,
+    researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+    Learn more 
+    About Services Projects Contact
+    </div> -->
+</body>
+
+</html>

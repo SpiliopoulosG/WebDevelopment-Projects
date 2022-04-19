@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222831;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-blue {
+    color: #4078c0;
+}
+
+.text-grey{
+    color: #f5f5f5;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.ff-rb {
+    font-family: 'Roboto';
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.mlr-1 {
+    margin: 0rem 1rem;
+}
+
+.m-1 {
+    margin: 0.5rem;
+}
+
+.m-top-2{margin-top: 2rem;}
+
+.header {
+    width: 60%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightmode {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.search {
+    width: 60%;
+    border-radius: 30px;
+    background: #393E46;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem
+}
+
+form{   
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    font-size: 20px;
+    background: #393E46;
+    color: #4078c0;
+    border: 0;  
+    outline: 0;
+}
+
+.search-button {
+    display: inline-block;
+    margin-right: 10px;
+    background: #339DFF;
+    color: #fff;
+    text-decoration: none;
+    line-height: 38px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 20%;
+    text-align: center;
+    outline: 0;
+    border: 0;
+}
+
+.search-button:hover {
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+.search-results{
+    width: 60%;
+    border-radius: 30px;
+    background: #393E46;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1rem;
+}
+
+img{
+    margin: 1rem;
+    max-width: 200px;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.right {
+    padding: 1rem;
+}
+
+.right a{
+    text-decoration: none;
+}
+
+.git-info{
+    background: #222831;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.git-info-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 10vh;
+}
+
+.contact-details-column{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.contact-details-column a{
+    text-decoration: none;
+}

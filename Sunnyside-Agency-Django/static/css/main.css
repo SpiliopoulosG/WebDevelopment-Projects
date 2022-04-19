@@ -1,0 +1,232 @@
+
+.text-red { color: hsl(7, 99%, 70%); }
+.text-yellow { color: hsl(51, 100%, 49%); }
+.text-dark-cyan { color:  hsl(167, 40%, 24%); }
+.text-dark-blue { color: hsl(198, 62%, 26%);}
+.text-cyan { color: hsl(168, 34%, 41%);}
+.text-dark-grey-blue-desaturated { color: hsl(212, 27%, 19%); }
+.text-very-dark-grey-blue { color: hsl(213, 9%, 39%); }
+.text-dark-grey-blue { color: hsl(213, 9%, 39%); }
+.text-grey-blue { color: hsl(232, 10%, 55%); }
+.text-white{ color: #fff; }
+.uppercase { text-transform: uppercase; }
+.ff-bl { font-family: "Barlow"; }
+.ff-fn { font-family: "Fraunces"; }
+.m-1 { margin: 1rem; }
+.m-top-3 { margin-top: 3rem;}
+
+a{ 
+    text-decoration: none;
+    color: #000;
+}
+.orange-a:hover { 
+    border-bottom: 3px solid hsl(51, 100%, 49%);
+}
+.red-a:hover { 
+    border-bottom: 3px solid hsl(7, 99%, 70%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-container { 
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/desktop/image-header.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title { 
+    margin-top: 30vh; 
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pictures { 
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.white-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.white-text h1,
+.white-text p {
+    width: 50%;
+}
+
+.orange-image { 
+    background: url(../images/desktop/image-transform.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.red-image { 
+    background: url(../images/desktop/image-stand-out.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.green-image { 
+    background: url(../images/desktop/image-graphic-design.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.blue-image { 
+    background: url(../images/desktop/image-photography.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.green-image *,
+.blue-image * {
+    width: 50%;
+}
+
+.testimonial-part {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial-part h1 {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2.7px;
+}
+
+.testimonials { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.testimonial-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.testimonial-column img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px
+}
+
+.testimonial-column img{
+    margin: 1.5rem 0rem;
+}
+
+.testimonial-column p {
+    width: 65%;
+
+    text-align: center;
+}
+
+.product-pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-height: 40vh;
+    margin-top: 8vh;
+}
+
+.cone {
+    background: url(../images/desktop/image-gallery-cone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.orange-box {
+    background: url(../images/desktop/image-gallery-orange.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.milkbottles {
+    background: url(../images/desktop/image-gallery-milkbottles.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sugarcubes {
+    background: url(../images/desktop/image-gallery-sugarcubes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.green-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    background: #B4E197;
+    align-items: center;
+}
+
+.green-container h1 {
+    font-weight: 900;
+    margin-top: 3rem;
+}
+
+.green-container div {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.green-container div * {
+    margin: 0rem 0.7rem;
+}
+
+.green-container p a:hover{
+    color: #fff;
+}
+
+.green-container .social{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}   
+
+.green-container .social i {
+    font-size: 1.5rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.green-container .social a:hover i {
+    color: #fff;
+}

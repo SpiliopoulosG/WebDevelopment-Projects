@@ -9,12 +9,20 @@
     <h1 class="uppercase text-white subheading-medium ff-bl"><span class="text-grey">03</span>Space Launch 101</h1>
 </div>
 
+     <!-- The dots/circles -->
+     <div class="dot-container m-1">
+        <span class="dot" onclick="currentSlide(0)">1</span>
+        <span class="dot" onclick="currentSlide(1)">2</span>
+        <span class="dot" onclick="currentSlide(2)">3</span>
+    </div>
+
+
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
         <div class="context">
-            <div class="container-left">
+            <div class="container">
                 <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
                 <h1 class="text-white m-1 ff-bf uppercase medium-header">Launch vehicle</h1>
                 <p class="text-grey m-1 subheading-medium">
@@ -24,15 +32,13 @@
                     it's quite an awe-inspiring sight on the launch pad!
                 </p>
             </div>
-            <div class="container-right">
-                <img src="{% static 'images/image-launch-vehicle-portrait.jpg' %}" alt="">
-            </div>
+            <div class="vehicle-img"></div>
         </div>
     </div>
 
     <div class="mySlides fade">
         <div class="context">
-            <div class="container-left">
+            <div class="container">
                 <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
                 <h1 class="text-white m-1 ff-bf uppercase medium-header">Spaceport</h1>
                 <p class="text-grey m-1 subheading-medium">
@@ -42,15 +48,13 @@
                     of the Earth’s rotation for launch.
                 </p>
             </div>
-            <div class="container-right">
-                <img src="{% static 'images/image-spaceport-portrait.jpg' %}" alt="">
-            </div>
+            <div class="spaceport-img"></div>
         </div>
     </div>
 
     <div class="mySlides fade">
         <div class="context">
-            <div class="container-left">
+            <div class="container">
                 <h1 class="text-grey subheading-small ff-bf uppercase m-1">The terminology...</h1>
                 <h1 class="text-white m-1 ff-bf uppercase medium-header">Space capsule</h1>
                 <p class="text-grey m-1 subheading-medium">
@@ -60,17 +64,8 @@
                     and plenty of other activities to keep you entertained.
                 </p>
             </div>
-            <div class="container-right">
-                <img src="{% static 'images/image-space-capsule-portrait.jpg' %}" alt="">
-            </div>
+            <div class="spacecapsule-img"></div>
         </div>
-    </div>
-
-        <!-- The dots/circles -->
-    <div class="dot-container m-1">
-        <span class="dot" onclick="currentSlide(0)">1</span>
-        <span class="dot" onclick="currentSlide(1)">2</span>
-        <span class="dot" onclick="currentSlide(2)">3</span>
     </div>
 
 

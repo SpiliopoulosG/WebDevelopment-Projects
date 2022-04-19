@@ -1,0 +1,263 @@
+.text-red {
+    color: hsl(15, 100%, 70%);
+}
+
+.text-blue {
+    color: hsl(195, 74%, 62%);
+}
+
+.text-light-red {
+    color: hsl(348, 100%, 68%);
+}
+
+.text-green {
+    color: hsl(145, 58%, 55%);
+}
+
+.text-violer {
+    color: hsl(264, 64%, 52%);
+}
+
+.text-orange {
+    color: hsl(43, 84%, 65%);
+}
+
+.text-dark-blue {
+    color: hsl(235, 46%, 20%);
+}
+
+.text-very-dark-blue {
+    color: hsl(226, 43%, 10%);
+}
+
+.text-des-blue {
+    color: hsl(235, 45%, 61%);
+}
+
+.text-pale {
+    color: hsl(236, 100%, 87%);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.ff-rb {
+    font-family: 'Rubik';
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fw-300{ font-weight: 300;}
+.fw-400{ font-weight: 400;}
+.fw-500{ font-weight: 500;}
+
+.active{ display: flex; }
+.passive { display: none; }
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-primary-blue {
+    color: hsl(246, 80%, 60%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(226, 43%, 10%);
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container {
+    height: 20vh;
+    margin: 1rem;
+    width: 250px;
+}
+
+.container img {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 18vh;
+}
+
+.container-header{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    height: 15vh;
+    position: relative;
+    bottom: -5vh;
+    padding: 1rem;
+}
+
+.container-header:hover{
+    background-color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+
+.container-header *{
+    margin: 0.5rem;
+}
+
+.primary {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+    height: 43vh;
+    margin: 1rem;
+    max-width: 250px;
+}
+
+.primary .profile {
+    height: 66%;
+    background: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.primary .profile img{
+    width: 75px;
+    height: 75px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.primary .time{
+    height: 33%;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary .time .time-p {
+    width: 100%;
+    text-align: left;
+    padding: 0.4rem;
+}
+
+.primary .time .time-p:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.work {
+    background: hsl(15, 100%, 70%);
+    border-radius: 15px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.play {
+    background: hsl(195, 74%, 62%);
+    border-radius: 15px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.study {
+    background: hsl(348, 100%, 68%);
+    border-radius: 15px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.exercise {
+    background: hsl(145, 58%, 55%);
+    border-radius: 15px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.social {
+    background: hsl(264, 64%, 52%);
+    border-radius: 15px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.selfcare {
+    background: hsl(43, 84%, 65%);
+    border-radius: 15px;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+@media (max-width: 1132px) {
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .container{
+        height: 160px;
+    }
+
+    .container-header{
+        height: 120px;
+        bottom: -40px;
+    }
+
+    .primary {
+        height: 220px;
+    }
+
+    .primary .profile{
+        flex-direction: row;
+        height: 150px;
+    }
+
+    .profile-description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primary .profile img{
+        width: 60px;
+        height: 60px;
+        margin-right: 1rem;
+    }
+
+    .primary .time {
+        display: flex;
+        padding: 1.5rem;
+        flex-direction: row;
+        width: 100%;
+    }
+}

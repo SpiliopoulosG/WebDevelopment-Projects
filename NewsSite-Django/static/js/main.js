@@ -21,23 +21,6 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dot = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//     dot[i].classList.remove('checked');
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {
-//     slideIndex = 1
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-//   dot[slideIndex - 1].classList.add('checked');
-//   // setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -52,7 +35,7 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dot[slideIndex - 1].classList.add('checked');
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000);
 }
 
 

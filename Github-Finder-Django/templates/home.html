@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-Finder</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <link rel="icon" href="{% static '/images/Github-Mark-32px.png' %}">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/113b84d72a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="text-white ff-rb">Github-Finder</h1>
+        <div class="lightmode">
+            <h2 class="text-white ff-rb mlr-1">FIND</h2>
+            <i class="far fa-lightbulb text-white icon"></i>
+        </div>
+    </div>
+
+
+    <div class="search">
+        <form action="" method="GET">
+            <i class="fas fa-search text-blue icon m-1"></i>
+            {% csrf_token %}
+            <input type="text" placeholder="Search GitHub Username..." name="search" autocomplete="off" />
+            <button class="search-button" type="submit" href="#">Search</button>
+        </form>
+    </div>
+
+    <div class="search-results">
+        <div class="left">
+            {% if response.name == None %}
+                <img src="{% static 'images/avatar.png' %}" alt="">
+                {% else %}
+                <img src="{{ response.avatar_url }}" alt="">
+            {% endif %}
+        </div>
+        <div class="right">
+            <div>
+                {% if response.name == None %}
+                <h1 class="text-white ff-rb m-1">User</h1>
+                {% else %}
+                <h1 class="text-white ff-rb m-1">{{ response.name }}</h1>
+                {% endif %}
+                {% if response.login == None %}
+                <a class="text-blue ff-rb m-1">No Url Available</a>
+                {% else %}
+                <a href="{{ response.html_url }}" class="text-blue ff-rb m-1">{{ response.login }}</a>
+                {% endif %}
+                {% if response.bio == None %}
+                <p class="text-white ff-rb m-1 m-top-2">This profile has no bio</p>
+                {% else %}
+                <p class="text-white ff-rb m-1 m-top-2">{{ response.bio }}</p>
+                {% endif %}
+                <div class="git-info">
+                    <div class="git-info-column text-white ff-rb">
+                        <p class="text-grey">Repos</p>
+                        {% if response.location == None %}
+                        <h1>0</h1>
+                        {% else %}
+                        <h1>{{ response.public_repos }}</h1>
+                        {% endif %}
+                    </div>
+                    <div class="git-info-column text-white ff-rb">
+                        <p class="text-grey">Followers</p>
+                        {% if response.followers == None %}
+                        <h1>0</h1>
+                        {% else %}
+                        <h1>{{ response.followers }}</h1>
+                        {% endif %}
+                    </div>
+                    <div class="git-info-column text-white ff-rb">
+                        <p class="text-grey">Following</p>
+                        {% if response.following == None %}
+                        <h1>0</h1>
+                        {% else %}
+                        <h1>{{ response.following }}</h1>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="contact-details m-1 m-top-2">
+                    <div class="contact-details-column">
+                        <a class="text-white ff-rb">
+                            <i class="fas fa-map-marker-alt m-1"></i>
+                            {% if response.location == None %}
+                            Not Available
+                            {% else %}
+                            {{ response.location|slice:":25" }}
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="contact-details-column">
+                        <a class="text-white ff-rb" href="{{ response.blog }}">
+                            <i class="fas fa-link m-1"></i>
+                            {% if response.blog == None %}
+                            Not Available
+                            {% else %}
+                            {{ response.blog|slice:":15" }}
+                            {% endif %}
+                        </a>
+                    </div>
+
+                    <div class="contact-details-column">
+                        <a class="text-white ff-rb" href="#"><i class="fab fa-twitter m-1"></i>
+                            {% if response.twitter_username == None %}
+                            Not Available
+                            {% else %}
+                            {{ response.twitter_username|slice:":25" }}
+                            {% endif %}
+                        </a>
+                    </div>
+                    <div class="contact-details-column">
+                        <a class="text-white ff-rb" href="#">
+                            <i class="fas fa-building m-1"></i>
+                            {% if response.company == None %}
+                            Not Available
+                            {% else %}
+                            {{ response.company|slice:":25" }}
+                            {% endif %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

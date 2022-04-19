@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <link rel="icon" href="{% static '/images/statistics.ico' %}">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/113b84d72a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- JQuery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="primary">
+            <div class="profile">
+                <img src="{% static 'images/image-jeremy.png' %}" alt="">
+                <div class="profile-description">
+                <p class="text-pale ff-rb fs-16 fw-300">Report for</p>
+                <h1 class="text-white ff-rb fw-300">Jeremy Robson</h1>
+                </div>
+            </div>
+
+            <div class="time">
+                <p class="text-pale ff-rb time-p">Daily</p>
+                <p class="text-pale ff-rb time-p">Weekly</p>
+                <p class="text-pale ff-rb time-p">Monthly</p>
+            </div>
+        </div>
+
+        <div class="work container">
+            <img src="{% static 'images/icon-work.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb">Work</p>
+
+                <h1 class="text-white ff-rb daily active">5hrs</h1>
+                <p class="text-pale ff-rb daily active">Previous - 7hrs</p>
+
+                <h1 class="text-white ff-rb weekly passive">32hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 36hrs</p>
+
+                <h1 class="text-white ff-rb monthly passive">103hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 128hrs</p>
+            </div>
+        </div>
+
+        <div class="play container">
+            <img src="{% static 'images/icon-play.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb">Play</p>
+                <h1 class="text-white ff-rb daily active">5hrs</h1>
+                <p class="text-pale ff-rb daily active">Previous - 7hrs</p>
+                <h1 class="text-white ff-rb weekly passive">10hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 8hrs</p>
+                <h1 class="text-white ff-rb monthly passive">103hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 128hrs</p>
+            </div>
+        </div>
+
+        <div class="study container">
+            <img src="{% static 'images/icon-study.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb active">Study</p>
+                <h1 class="text-white ff-rb daily active">0hrs</h1>
+                <p class="text-pale ff-rb daily active">Previous - 1hrs</p>
+                <h1 class="text-white ff-rb weekly passive">4hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 7hrs</p>
+                <h1 class="text-white ff-rb monthly passive">13hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 19hrs</p>
+            </div>
+        </div>
+
+        <div class="exercise container">
+            <img src="{% static 'images/icon-exercise.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb">Exercise</p>
+                <h1 class="text-white ff-rb daily active">1hr</h1>
+                <p class="text-pale ff-rb daily active">Previous - 1hr</p>
+                <h1 class="text-white ff-rb weekly passive">4hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 5hrs</p>
+                <h1 class="text-white ff-rb monthly passive">11hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 18hrs</p>
+            </div>
+        </div>
+
+        <div class="social container">
+            <img src="{% static 'images/icon-social.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb">Social</p>
+                <h1 class="text-white ff-rb daily active">1hr</h1>
+                <p class="text-pale ff-rb daily active">Previous - 3hrs</p>
+                <h1 class="text-white ff-rb weekly passive">5hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 10hrs</p>
+                <h1 class="text-white ff-rb monthly passive">21hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 23hrs</p>
+            </div>
+        </div>
+
+        <div class="selfcare container">
+            <img src="{% static 'images/icon-self-care.svg' %}" alt="">
+            <div class="container-header">
+                <p class="text-pale ff-rb">Self Care</p>
+                <h1 class="text-white ff-rb daily active">0hrs</h1>
+                <p class="text-pale ff-rb daily active">Previous - 1hr</p>
+                <h1 class="text-white ff-rb weekly passive">2hrs</h1>
+                <p class="text-pale ff-rb weekly passive">Previous - 2hrs</p>
+                <h1 class="text-white ff-rb monthly passive">7hrs</h1>
+                <p class="text-pale ff-rb monthly passive">Previous - 10hrs</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+
+
+</html>
