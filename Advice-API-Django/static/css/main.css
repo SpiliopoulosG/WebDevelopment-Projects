@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.uppercase { text-transform: uppercase; }
+.ff-mr { font-family: 'Manrope', sans-serif;}
+.text-cyan { color: hsl(193, 38%, 86%);}
+.text-green { color: hsl(150, 100%, 66%);}
+.text-gray { color: hsl(217, 19%, 38%);}
+.text-dark-gray { color: hsl(217, 19%, 24%);}
+.text-dark-blue { color: hsl(218, 23%, 16%);}
+.fs-28 { font-size: 28px; }
+
+body{
+    min-height: 100vh;
+    background:hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box { 
+    width: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    background: hsl(217, 19%, 24%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title { 
+    margin: 2rem;
+    font-size: 15px;
+}
+
+.content {
+    width: 75%;
+}
+
+.content p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.box hr {
+    width: 75%;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    top: 30px;
+}
+
+.form button {
+    width: 100%;
+    border-radius: 50%;
+    border: None;
+    background: hsl(150, 100%, 66%);
+}
+
+.form button i {
+    font-size: 1.5rem;
+}
+
+.form button:hover {
+    background: hsl(193, 38%, 86%);
+}
