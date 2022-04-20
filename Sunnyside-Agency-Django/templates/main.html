@@ -20,17 +20,25 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 
     <div class="blue-container">
-        <div class="navbar">
+        <div class="topnav" id="myTopnav">
+            <div>
+                <a href="#home" class="logo ff-bl text-white fs-2">Sunnyside</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars text-white fs-2"></i>
+                </a>
+            </div>
+            
 
+            <ul class="list" id="menu">
+                <li><a href="#news" class="ff-bl text-white fs-1">About</a></li>
+                <li><a href="#contact" class="ff-bl text-white fs-1">Services</a></li>
+                <li><a href="#about" class="ff-bl text-white fs-1">Projects</a></li>
+            </ul>
         </div>
 
         <div class="title">
@@ -151,6 +159,7 @@
     Learn more 
     About Services Projects Contact
     </div> -->
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>

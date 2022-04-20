@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Store</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <link rel="icon" href="{% static '/images/favicon-32x32.png' %}">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/113b84d72a.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="text">
+            <div class="logo">
+                <span class="dot"></span>
+                <h3 class="uppercase">Good<br>Apparel</h3>
+            </div>
+
+            <h1 class="uppercase"><span class="text-red">We're</span><br>coming<br>soon</h1> 
+
+            <p  class="text-red fs-18"> Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+            <form action="">
+                <input type="email" name="email" placeholder="Email Address" id="">
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+           
+        </div>
+    
+    </div>
+
+    <div class="image">
+    </div>
+
+</body>
+
+</html>
