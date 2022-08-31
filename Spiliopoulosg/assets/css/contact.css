@@ -17,11 +17,7 @@ body
   flex-direction: column;
   overflow-x: hidden;
   align-items: center;
-
-  background: rgb(0,173,181);
-  background: -webkit-linear-gradient(left, rgba(0,173,181,1) 0%, rgba(21,206,224,1) 25%, rgba(167,149,120,1) 50%, rgba(249,130,11,1) 75%, rgba(255,87,34,1) 100%);
-  background: -o-linear-gradient(left, rgba(0,173,181,1) 0%, rgba(21,206,224,1) 25%, rgba(167,149,120,1) 50%, rgba(249,130,11,1) 75%, rgba(255,87,34,1) 100%);
-  background: linear-gradient(to right, rgba(0,173,181,1) 0%, rgba(21,206,224,1) 25%, rgba(167,149,120,1) 50%, rgba(249,130,11,1) 75%, rgba(255,87,34,1) 100%);
+  background: #353d4d;
 }
 
 @media(max-height : 900px){
@@ -30,8 +26,9 @@ body
   }
 }
 
-.text-blue{ color: #00ADB5;}
-.text-orange{ color: #FF5722;}
+
+.text-nord {color: #353d4d;}
+.text-nord-light {color: #8394a6;}
 .text-grey{ color: #EEEEEE;}
 .text-white{ color: #fff; }
 .m-1 { margin: 1rem; }
@@ -102,7 +99,7 @@ nav {
 }
 
 .primary-navigation li.active {
-  background-color: #00ADB5;
+  background-color: #8394a6;
   border-radius: 10px;
   padding: 0 8px;
 }
@@ -215,7 +212,7 @@ footer .social
 .social a:hover i {
     transform: translateY(-5px);
     transition: all ease 1s;
-    color: #00ADB5;
+    color: #8394a6;
 }
 
 @media only screen and (max-width: 400px) {
